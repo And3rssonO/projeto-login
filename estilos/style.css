@@ -67,15 +67,32 @@ section#login > div#formulario > p{
 
 section#login > div#formulario > form > div.campo {
     background-color: var(--cor4);
-    padding: 8px;
     border-radius: 5px;
-    margin-bottom: 7px;
+    margin-bottom: 4px;
+    padding-right: 4px;
 }
 
 section#login > div#formulario > form > div.campo > input {
     background-color: var(--cor3);
-    padding: 5px;
+    font-size: 1em;
+    height: 100%;
+    width: calc(100% - 44px);
+    padding: 8px;
+    padding-bottom: 8px;
     border-radius: 5px;
+    transform: translateY(-7px);
+    border: 0px;
+}
+
+section#login > div#formulario > form > div.campo > input:focus-within{
+    background-color: white;
+}
+
+div.campo > span{
+    color: var(--cor2);
+    font-size: 2em;
+    width: 40px;
+    padding: 3px;
 }
 
 div.campo > label{
